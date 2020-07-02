@@ -12,7 +12,7 @@
 
 
 ###########################################################
-git remote add origin https://github.com/MdNazmul9/My-Blog-Site.git
+#git remote add origin https://github.com/MdNazmul9/My-Blog-Site.git
 
 git push -u origin master
 

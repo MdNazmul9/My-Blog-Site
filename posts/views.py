@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 #from rest_framework import generics #,permissions
 from rest_framework import viewsets
+from .models import Post
 
 from .permissions import IsAuthorOrReadOnly
 from .models import Post
@@ -10,6 +11,9 @@ class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = Post.objects.all()
     serializer_class = PostSerializer  
+    #model = Post
+    #template_name = 'home.html'
+   
 
 
 class UserViewSet(viewsets.ModelViewSet):
